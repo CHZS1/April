@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Банер</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="scss/style.css">
+    </head>
+    <body>
+        <section class="banner">
+            <div class="container">
+                <div class="banner__wrap flex">
+                    <img class="echo" src="images/echo.png">
+                    <div class="banner__top flex">
+                        <h1>УЗИ</h1>
+                        <span>+</span>
+                        <h2>Консультация гинеколога</h2>
+                    </div>
+                    <div class="banner__bottom flex">
+                        <div class="bottom_left">
+                            <div class="price__wrap flex">
+                                <div class="dots-1"></div>
+                                <h2 class="price">за 1800 р</h2>
+                                <div class="dots-2"></div>
+                            </div>
+                            <p class="banner__descr">
+                                Врач высшей категории!
+                            </p>
+                        </div>
+                        <h2 class="sale">
+                            АКЦИЯ
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="calc">
+            <div class="container">
+                <div class="form__wrap flex">
+                    <h2>
+                        Калькулятор стоимости
+                    </h2>
+                    <form>
+                        <div class="select">
+                            <label>Тип бытовки</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Бытовка с тамбуром</option>
+                                <option value="1">Бытовка 2</option>
+                                <option value="2">Бытовка 3</option>
+                                <option value="3">Бытовка 4</option>
+                            </select>
+                        </div>
+                        
+                        <div class="select">
+                            <label>Расстояние от КАД</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Бытовка с тамбуром</option>
+                                <option value="1">Бытовка 2</option>
+                                <option value="2">Бытовка 3</option>
+                                <option value="3">Бытовка 4</option>
+                            </select>
+                        </div>
+                        <div class="range">
+                            <label for="customRange2" class="form-label">Срок аренды, месяцев</label>
+                            <span class="digit-1">12</span>
+                            <input type="range" class="form-range range-1" min="0" max="24" id="customRange2">
+                        </div>
+                        <div class="range">
+                            <label for="customRange2" class="form-label">Кол-во бытовок, шт</label>
+                            <span class="digit-2">10</span>
+                            <input type="range" class="form-range range-2" min="0" max="20" id="customRange2">
+                        </div>
+                        <div class="submit flex">
+                            <button>Заказать</button>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
