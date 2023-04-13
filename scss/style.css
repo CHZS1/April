@@ -289,17 +289,18 @@ body {
     background-size: cover;
   }
 }
-.form__wrap button {
+.form__wrap a {
   border-radius: 5px;
   padding: 13px 100px;
   border: none;
   outline: none;
+  text-decoration: none;
   background-color: #D23B60;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.form__wrap button:hover {
+.form__wrap a:hover {
   background-color: #000;
 }
 .form__wrap h2 {
@@ -372,4 +373,61 @@ input[type=range]::-webkit-slider-thumb {
   height: 15px;
   -webkit-appearance: none;
   margin-top: -4px;
+}
+
+.sent-to-serv__wrap {
+  position: relative;
+  display: none;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(86, 124, 146);
+  border-radius: 5px;
+}
+@media (min-width: 800px) {
+  .sent-to-serv__wrap {
+    width: 800px;
+  }
+}
+.sent-to-serv__wrap a {
+  position: absolute;
+  content: "X";
+  cursor: pointer;
+  right: -10px;
+}
+.sent-to-serv__wrap h2 {
+  text-align: center;
+}
+.sent-to-serv__wrap form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sent-to-serv__wrap .send-to-serv__input {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .sent-to-serv__wrap .send-to-serv__input {
+    width: 90%;
+  }
+}
+.sent-to-serv__wrap .check, .sent-to-serv__wrap .btn {
+  width: 100%;
+  padding-left: 30px;
+  flex-direction: row;
+}
+@media (max-width: 450px) {
+  .sent-to-serv__wrap .check, .sent-to-serv__wrap .btn {
+    font-size: 0.7rem;
+  }
+}
+.sent-to-serv__wrap .btn {
+  justify-content: flex-end;
+}
+
+.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
