@@ -47,7 +47,7 @@
                     <form>
                         <div class="select">
                             <label>Тип бытовки</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" id="box-select" aria-label="Default select example">
                                 <option selected>Бытовка с тамбуром</option>
                                 <option value="1">Бытовка 2</option>
                                 <option value="2">Бытовка 3</option>
@@ -57,11 +57,11 @@
                         
                         <div class="select">
                             <label>Расстояние от КАД</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Бытовка с тамбуром</option>
-                                <option value="1">Бытовка 2</option>
-                                <option value="2">Бытовка 3</option>
-                                <option value="3">Бытовка 4</option>
+                            <select class="form-select" id="dist-select" aria-label="Default select example">
+                                <option selected>Самовывоз</option>
+                                <option value="1">10 км</option>
+                                <option value="2">20км</option>
+                                <option value="3">30км</option>
                             </select>
                         </div>
                         <div class="range">
@@ -74,10 +74,50 @@
                             <span class="digit-2">10</span>
                             <input type="range" class="form-range range-2" min="0" max="20" id="customRange2">
                         </div>
-                        <div class="submit flex">
-                            <button>Заказать</button>
+                    </form>
+                    <div class="submit flex">
+                        <a id="sent-to-calc" onclick="sentAll()" href="#form">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sent-to-serv" id="form">
+            <div class="container">
+                <div class="sent-to-serv__wrap flex">
+                    <h2>
+                        Заказать расчет
+                    </h2>
+                    <a id="close" onclick="closeForm()">X</a>
+                    <form>
+                        <div class="send-to-serv__input">
+                            <input placeholder="ваше имя"  id="name" required>
                         </div>
-                       
+                        <div class="send-to-serv__input">
+                            <input placeholder="ваш телефон"  id="phone" required>
+                        </div>
+                        <div class="send-to-serv__input">
+                            <label for="type-of-box">Тип бытовки</label>
+                            <input id="type-of-box" type="text"  required>
+                        </div>
+                        <div class="send-to-serv__input">
+                            <label for="distance">Расстояние от КАД</label>
+                            <input id="distance" type="text"  required>
+                        </div>
+                        <div class="send-to-serv__input">
+                            <label for="time-of-rent">Срок аренды</label>
+                            <input id="time-of-rent" type="text"  required>
+                        </div>
+                        <div class="send-to-serv__input">
+                            <label for="quantity_of-boxes">Колличество бытовок</label>
+                            <input id="quantity-of-boxes" type="text">
+                        </div>
+                         <div class="send-to-serv__input check">
+                            <input type="checkbox" required>
+                            <span>Я согласен на обработку персональных данных</span>
+                        </div>
+                        <div class="send-to-serv__input btn">
+                            <button>Отправить</button>
+                        </div>
                     </form>
                 </div>
             </div>
